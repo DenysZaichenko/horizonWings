@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Horizon Wings</title>
+    <link rel="stylesheet" href="/style/main.css">
+    <link rel="icon" href="/img/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <header class="header">
+        <div class="logo-container">
+            <img src="/img/logo.png" alt="" class="logo-img">
+            <h1 class="logo-text"><a href="/main.html" class="logo-link">Horizon Wings</a></h1>
+        </div>
+        <nav class="main-nav">
+            <ul class="nav-list">
+                <li class="nav-item"><a href="/pages/aboutUs.html" class="nav-link">About us</a></li>
+                <li class="nav-item"><a href="/pages/flights.html" class="nav-link">Flights</a></li>
+                <li class="nav-item"><a href="/pages/specialOffers.html" class="nav-link">Special offers</a></li>
+                <li class="nav-item"><a href="/pages/help.html" class="nav-link">Help</a></li>
+                <li class="nav-item">|</li>
+                <li class="nav-item"><a href="#" class="nav-link" id="loginBtn">Sign Up</a></li>
+                <li class="nav-item"><a href="#" class="nav-link btn-login" id="signupBtn">Log In</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <div class="background-image">
+            <div class="content-container" id="flight-container">
+                <div class="text-container" id="flight-text-container">
+                    <div class="left-section">
+                        <form id="flight-search-form">
+                            <h2>Find your flight</h2>
+                            <label for="departure-city">Departure City:</label>
+                            <select id="departure-city" name="departure-city">
+                                <option value="New York">New York</option>
+                                <option value="Los Angeles">Los Angeles</option>
+                                <option value="Chicago">Chicago</option>
+                            </select><br><br>
+            
+                            <label for="destination-city">Destination City:</label>
+                            <select id="destination-city" name="destination-city">
+                                <option value="London">London</option>
+                                <option value="Paris">Paris</option>
+                                <option value="Tokyo">Tokyo</option>
+                            </select><br><br>
+                            <label for="departure-date">Departure Date:</label>
+                            <input type="date" id="departure-date" name="departure-date"><br><br>
+
+                            <label for="arrival-checkbox">Round trip:
+                                <input type="checkbox" id="arrival-checkbox" onchange="toggleArrivalDate()">
+                            </label>
+                            
+                            <label for="arrival-checkbox">Arrival Date</label>
+                            <input type="date" id="arrival-date" name="arrival-date" disabled><br><br>
+            
+                            <label for="seats">Number of Seats:</label>
+                            <input type="number" id="seats" name="seats" min="1"><br><br>
+            
+                            <label for="luggage">Luggage:</label>
+                            <select id="luggage" name="luggage">
+                                <option value="carry-on">Carry-on</option>
+                                <option value="checked">Checked baggage</option>
+                            </select><br><br>
+            
+                            <button type="submit" id="flight-search">Search</button>
+                            <button type="submit" id="clear-flight-description">Clear</button>
+                        </form>
+                    </div>
+                    <div class="right-section">
+                        <textarea id="flight-description" rows="10" readonly></textarea>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    
+    <footer class="footer">
+        <h2>Connect with us</h2>
+        <div class="social-icons">
+            <a href="#" class="fa fa-facebook"></a>
+            <a href="#" class="fa fa-twitter"></a>
+            <a href="#" class="fa fa-google"></a>
+            <a href="#" class="fa fa-linkedin"></a>
+            <a href="#" class="fa fa-instagram"></a>
+        </div>
+        <div class="footer-links">
+            <a href="#">General terms & conditions of carriage</a>
+            <a href="#">Terms of Use</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Cookies</a>
+            <a href="#">Cookie preferences</a>
+        </div>
+    </footer>
+    
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <h2>Log in / Sign up</h2>
+          <form>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br><br>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required><br><br>
+            <button type="submit">Sign up</button>
+          </form>
+        </div>
+      </div>
+    <script src="/js/main.js"></script>
+</body>
+</html>

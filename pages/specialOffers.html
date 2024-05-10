@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Horizon Wings</title>
+    <link rel="stylesheet" href="/style/main.css">
+    <link rel="icon" href="/img/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <header class="header">
+        <div class="logo-container">
+            <img src="/img/logo.png" alt="" class="logo-img">
+            <h1 class="logo-text"><a href="/main.html" class="logo-link">Horizon Wings</a></h1>
+        </div>
+        <nav class="main-nav">
+            <ul class="nav-list">
+                <li class="nav-item"><a href="/pages/aboutUs.html" class="nav-link">About us</a></li>
+                <li class="nav-item"><a href="/pages/flights.html" class="nav-link">Flights</a></li>
+                <li class="nav-item"><a href="/pages/specialOffers.html" class="nav-link">Special offers</a></li>
+                <li class="nav-item"><a href="/pages/help.html" class="nav-link">Help</a></li>
+                <li class="nav-item">|</li>
+                <li class="nav-item"><a href="#" class="nav-link" id="loginBtn">Sign Up</a></li>
+                <li class="nav-item"><a href="#" class="nav-link btn-login" id="signupBtn">Log In</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <div class="background-image">
+            <div class="content-container">
+                <div class="text-container">
+                    <h2 class="section-title">Special offers</h2>
+                    <div class="offer-container">
+                        <img src="/img/special-offerts-member.webp" class="offer-image">
+                        <div class="offer-text">
+                            <h3>Member card</h3>
+                            <p>By subscribing to our airline, you gain access to exclusive offers and 
+                                special promotions available only to our subscribers. 
+                                This means you'll always be informed about the most 
+                                advantageous deals and can save on your travels.</p>
+                                <a href="#" class="nav-link btn-login" id="learnMore">Lear more</a>
+                        </div>
+                    </div>
+                    <div class="offer-container">
+                        <img src="/img/special-offerts-discount.png" alt="Offer Image" class="offer-image">
+                        <div class="offer-text">
+                            <h3>Second ticket -50%!</h3>
+                            <p>This month, we're offering a special promotion 
+                                where you can enjoy discounts on the second ticket when you 
+                                book with us. Don't miss out on this limited-time offer! 
+                                Subscribe today to take advantage of this exclusive deal and start saving on your travels.</p>
+                            <a href="#" class="nav-link btn-login" id="learnMore">Lear more</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    
+    
+    <footer class="footer">
+        <h2>Connect with us</h2>
+        <div class="social-icons">
+            <a href="#" class="fa fa-facebook"></a>
+            <a href="#" class="fa fa-twitter"></a>
+            <a href="#" class="fa fa-google"></a>
+            <a href="#" class="fa fa-linkedin"></a>
+            <a href="#" class="fa fa-instagram"></a>
+        </div>
+        <div class="footer-links">
+            <a href="#">General terms & conditions of carriage</a>
+            <a href="#">Terms of Use</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Cookies</a>
+            <a href="#">Cookie preferences</a>
+        </div>
+    </footer>
+    
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <h2>Log in / Sign up</h2>
+          <form>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br><br>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required><br><br>
+            <button type="submit">Sign up</button>
+          </form>
+        </div>
+      </div>
+    <script src="/js/main.js"></script>
+</body>
+</html>
